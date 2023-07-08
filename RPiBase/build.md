@@ -36,6 +36,7 @@ cd ../../../../..
 ./str2str -in serial://ttyS0:38400:8:n:1:
 ```
 The output is RTCM3 binary, similar to that shown below.
+
 ![](RTKB1.PNG)
 9. You can log the serial stream using
 ```
