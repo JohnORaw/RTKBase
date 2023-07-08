@@ -1,5 +1,7 @@
 # RPi Base Build
 
+Read the [arts list](Parts.md) before you start! 
+
 1. Configure the PI and do updates, see [1].
 2. Enable and test SSH and VNC.
 3. Install RTKLIB [2].
