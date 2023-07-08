@@ -2,7 +2,7 @@
 
 Read the [parts list](Parts.md) before you start! 
 
-1. Configure the PI and do updates, see [1].
+1. Configure the PI and do updates, see [1]. Ensure you have enabled the serial port, but disabled the console.
 2. Enable and test SSH and VNC.
 3. I am using a Waveshare 10.1 screen. Add the following lines to /boot/config.txt
 
