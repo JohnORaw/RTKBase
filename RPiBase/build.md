@@ -36,6 +36,7 @@ The output is RTCM3 binary, similar to that shown below.
 ```
 
 References.
+
 [1] https://www.ardusimple.com/connect-your-simplertk2b-to-a-raspberry-pi/
 
 [2] https://rtklibexplorer.wordpress.com/2022/11/10/raspberry-pi-based-ppk-and-rtk-solutions-with-rtklib/
