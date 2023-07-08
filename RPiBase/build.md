@@ -2,7 +2,7 @@
 
 1. Configure the PI and do updates, see [1].
 2. Enable and test SSH and VNC.
-3. Install RTKLIB
+3. Install RTKLIB [2].
 ```
 sudo apt update
 sudo apt install git
@@ -35,4 +35,5 @@ The output is RTCM3 binary, similar to that shown below.
 
 References.
 [1] https://www.ardusimple.com/connect-your-simplertk2b-to-a-raspberry-pi/
+
 [2] https://rtklibexplorer.wordpress.com/2022/11/10/raspberry-pi-based-ppk-and-rtk-solutions-with-rtklib/
