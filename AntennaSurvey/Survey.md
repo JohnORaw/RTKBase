@@ -1,4 +1,4 @@
-Accurately survey the base location using RINEX files
+# Accurately survey the base location using RINEX files
 
 I use a dedicated Windows 7 computer to manage my _Continuously Operating Reference Station_ (CORS).
 I have installed RTKLIB from http://rtkexplorer.com/downloads/rtklib-code/ or you can use the Linux version at the command line.
