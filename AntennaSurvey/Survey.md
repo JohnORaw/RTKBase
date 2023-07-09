@@ -1,7 +1,9 @@
 # Accurately survey the base location using RINEX files
 
 I use a dedicated Windows 7 computer to manage my _Continuously Operating Reference Station_ (CORS).
+
 ![](Sketches.jpg)
+
 I have installed RTKLIB from http://rtkexplorer.com/downloads/rtklib-code/ or you can use the Linux version at the command line.
 
 1. Fix the base antenna in a permanent location. My CORS station uses a steel pole with a survey grade antenna.
