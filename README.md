@@ -7,8 +7,8 @@ It is intended for use with a Raspberry Pi, either at a remote site by a surveye
 1. [Parts list](parts.md)
 2. [Build instructions](build.md)
 3. [GNSS configuration](gnss_configuration.md)
-4. [Survey the antenna location](documentation/Survey.md)
-5. [Using SNIP](documentation/Snip.md)
+4. [Survey the antenna location](Documentation/Survey.md)
+5. [Using SNIP](Documentation/Snip.md)
 
 
 
