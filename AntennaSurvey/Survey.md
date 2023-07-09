@@ -8,21 +8,21 @@ I have installed RTKLIB from http://rtkexplorer.com/downloads/rtklib-code/ or yo
 - Raw data by right-clicking **UBX-RXM-RAWX** in U-Centre and enabling.
 - Subframe information by right-clicking **UBX-RXM-SFRBX** in U-Centre and enabling.
 
-In U-Centre, go to **Player->Record**. I record 4 hours of data, so I have a good sample size. I use the time as filename and the .ubx extension.
+In U-Centre, go to **Player->Record**. I record 4 hours of data, so I have a good sample size in a file size under 100MB. 
+I use the time as filename and the .ubx extension. In Base/Rover terms, this is the Rover data.
 
-In Base/Rover terms, this is the Rover data.
 Next I need to find an official source of RINEX data. In the UK and ireland, this data can be got from OS/OSI.
 For my location, I can get data from two stations, Malin and Foyle, at https://gnss.osi.ie/download-rinex.php
 I select the station, date, start and end time.
 The data downloads as a ZIP file and when I extract the files, I have three files per hour.
-Save these in a folder, mine is called **Malin RINEX**.
+I save these in a folder, mine is called **Malin RINEX**.
 Note that the data is not available until c. 2 hours after it is logged, and sometimes stations are broken, no data!
 
 1. Run the **RTKLaunch** tool.
 2. Run the **RTKCONV** tool.
-- As an input file, select your 24-hour log file. Mine was called **1049.ubx**.
+- As an input file, select your 4-hour log file. Mine was called **1049.ubx**.
 - The tool will suggest file names for **OBS**, **NAV** and **SBS** files. 
-- Click Convert and go for coffee.
+- Click Convert and go for coffee!
 - Save these file in a directory called **Rover RINEX**.
 
 ![](RTKCONV.jpg)
@@ -44,6 +44,7 @@ Any row with a **Q** value of **1** is in RTK Fixed mode and should be accurate.
 ![](Output.jpg)
 
 I can now do calculations, see how stable the position is, get the mean values, variance etc.
+I finish with a text file of my conclusions.
 
 
 
