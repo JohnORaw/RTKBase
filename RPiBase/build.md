@@ -1,6 +1,6 @@
 # RPi Base Build
 
-Read the [parts list](Parts.md) before you start! 
+Read the [parts list](parts.md) before you start! 
 
 1. Configure the PI and do updates, see [1]. Ensure you have enabled the serial port, but disabled the console.
 2. Enable and test SSH and VNC.
