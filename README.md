@@ -4,3 +4,9 @@ This repo is a rewrite from 2023, with a spec for the simplest RTK Base configur
 It uses str2str from RTKLIB and Linux shell scripts.
 It is intended for use with a Raspberry Pi, either at a remote site by a surveyed-in base, or at a fixed, permanent site.
 
+1. [Parts list](parts.md)
+2. [Build instructions](build.md)
+3. [GNSS configuration](gnss_configuration.md)
+
+
+
