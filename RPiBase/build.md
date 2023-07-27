@@ -33,7 +33,7 @@ cd ../../../../..
 7. Identify which port you are connecting your GNSS device to.
 8. My GNSS is on ttyS0, so my test line is:
 ```
-./str2str -in serial://ttyS0:38400:8:n:1:
+str2str -in serial://ttyS0:38400:8:n:1:
 ```
 The output is RTCM3 binary, similar to that shown below.
 
