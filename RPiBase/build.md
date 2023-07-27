@@ -43,7 +43,7 @@ The output is RTCM3 binary, similar to that shown below.
 ```
 ./str2str -in serial://ttyS0:38400:8:n:1: -out base_%d%m%y_%h%M.ubx
 ```
-
+To be sure, git clone JohnORaw\RTCM and run **RTCMTest.py**. This will identify what sentences are being received.
 
 
 References.
