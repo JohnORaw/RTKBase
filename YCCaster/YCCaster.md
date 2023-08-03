@@ -36,19 +36,10 @@ I followed [here](https://yccaster.com/guide) initially, the notes are all corre
 ![](RTK5.png) 
 
 ## Production Systems
-In most applications, I am using Linux IoT devices like the RPi. In that case, the server uses RTKLIB and STR2STR. I explain how to install this on a RPi in this repo under RPiBase.
+In most applications, I am using Linux IoT devices like the RPi. In that case, the IoT device uses RTKLIB and STR2STR at the command line. I explain how to install RTKLIB on a RPi in this repo under **RPiBase**.
 
 ### Base
-At the computer called **RTK-Base**, we previoulsy tested and configured a W10 PC running U-Center. I connect the same UBX GNSS(UART1) to a RPi(ttyS0) and ensure only RTCM messages egress on this port. On the RPi, I run the command: 
-
-```
-str2str -in serial://ttyS0:115200:8:n:1: -out ntrips://XXXXX:YYYYY@ZZZZZ:2101/MOUNTPOINT
-```
-Where
-- XXXXX is my username defined in clients.yml, in the YCCaster example = myrover
-- YYYYY is the password defined in clients.yml, in the YCCaster example = 12345
-- ZZZZZ is the FQDN of the AWS instance. This changes between reboots!
-- MOUNTPOINT is whatever you call your mountpoint in mountpoints.yml. In the YCCaster example = BCEP00BKG0
+At the computer called **RTK-Base**, we previoulsy tested and configured a W10 PC running U-Center. I connect the same UBX GNSS(UART1) to a RPi(ttyS0) and ensure only RTCM messages egress on this port. 
 
 My test string using the defaults was:
 ```
@@ -58,5 +49,7 @@ str2str -in serial://ttyS0:115200:8:n:1: -out ntrips://myrover:12345@ec2-34-244-
 At the computer called **RTK-Rover**, we previously tested and configured a W10 PC running U-Center. I connect the same UBX GNSS(UART1) to a RPi(ttyS0) and ensure only RTCM messages egress on this port. On the RPi, I run the command: 
 
 ```
-str2str -in serial://ttyS0:115200:8:n:1: -out ntrips://XXXXX:YYYYY@ZZZZZ:2101/MOUNTPOINT
+str2str -in ntripcli://myrover:12345@ec2-34-244-41-206.eu-west-1.compute.amazonaws.com:2101/BCEP00BKG0 -out serial://ttyS0:115200:8:n:1:
 ```
+
+I again confirm that the GNSS shows *Fix Mode: FLOAT* and with a clear sky view, and then *Fix Mode: FIXED*
