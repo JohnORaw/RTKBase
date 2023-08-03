@@ -59,4 +59,4 @@ At the computer called **RTK-Rover**, we previously tested and configured a W10 
 
 ```
 str2str -in serial://ttyS0:115200:8:n:1: -out ntrips://XXXXX:YYYYY@ZZZZZ:2101/MOUNTPOINT
-```hardtoguess
+```
